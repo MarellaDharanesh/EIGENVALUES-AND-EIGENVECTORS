@@ -19,13 +19,13 @@ End the program
 
 ## Program:
 ```
-#Program to find the inverse of a matrix.
-#Developed by: marella dharanesh
-#RegisterNumber: 22000785
+#Program to find the eigen values and eigen vectors.
+#Developed by: MARELLA DHARANESH
+#RegisterNumber:22000785
 import numpy as np
-a=np.array([[-2,2,-3],[2,1,-6],[-1,-2,0]])
-b=np.linalg.inv(a)
-print(b)
+A=np.array([[-2,2,-3],[2,1,-6],[-1,-2,0]])
+values,vectors=np.linalg.eig(A)
+print("Eigen values are {} and Eigen Vectors are {}".format(values,vectors))
 ```
 ## Output:
 ![Screenshot (34)](https://user-images.githubusercontent.com/118707669/214330752-2685d150-65fd-494c-8acb-d23623d8f7fa.png)
